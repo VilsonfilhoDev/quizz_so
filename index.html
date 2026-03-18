@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Grande Conexão - O Desafio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="start-screen">
+    <div class="start-content">
+        <h1>A Grande Conexão</h1>
+        <p>Hardware • SO • Redes</p>
+        <button id="btn-start-game">Testar_QI</button>
+    </div>
+</div>
+        <header>
+            <h1>A Grande Conexão</h1>
+            <div id="score-board">
+                PONTOS: <span id="current-score">0</span> | 
+                RECORDE: <span id="high-score">0</span>
+            </div>
+            <div id="timer">Tempo: <span id="seconds">20</span>s</div>
+        </header>
+
+        <div id="puzzle-viewport">
+            <img id="secret-image" src="" alt="Hardware Secreto">
+            <div id="overlay-container"></div>
+        </div>
+
+        <div id="question-area">
+            <p id="question-text">Carregando desafio...</p>
+            <input type="text" id="answer-input" placeholder="Digite sua resposta..." autocomplete="off">
+            <button id="btn-check">Enviar</button>
+        </div>
+
+        <div id="feedback"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
